@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import webtest
 import os
-
-from openprocurement.api.tests.base import PrefixedRequestClass, BaseTenderWebTest as APIBaseTenderWebTest
+from openprocurement.api.tests.base import PrefixedRequestClass
+from openprocurement.tender.belowthreshold.tests.base import BaseTenderWebTest as APIBaseTenderWebTest
 
 
 class BaseTenderWebTest(APIBaseTenderWebTest):

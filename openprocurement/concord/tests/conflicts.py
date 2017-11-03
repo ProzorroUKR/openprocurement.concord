@@ -1,17 +1,10 @@
 # -*- coding: utf-8 -*-
 import unittest
-import os
 import random
-from datetime import timedelta
-
-from openprocurement.api.models import get_now
-from openprocurement.api.utils import get_revision_changes
-from openprocurement.api.tests.base import test_organization
+from openprocurement.tender.belowthreshold.tests.base import test_organization
 from openprocurement.concord.tests.base import BaseTenderWebTest
 from openprocurement.concord.daemon import conflicts_resolve as resolve
-from jsonpatch import make_patch, apply_patch as _apply_patch
-#from json_tools import diff, patch as _patch
-from iso8601 import parse_date
+# from json_tools import diff, patch as _patch
 
 IGNORE = ['_attachments', '_revisions', 'revisions', 'dateModified', "_id", "_rev", "doc_type"]
 
