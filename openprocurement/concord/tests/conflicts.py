@@ -212,7 +212,8 @@ class TenderConflictsTest(BaseTenderWebTest):
         tender = self.db.get(self.tender_id)
         self.assertEqual(len(tender['bids']), 1)
         self.assertEqual(tender['bids'][0]["id"], bid_id)
-        self.assertEqual(tender['bids'][0]["value"]["amount"], 401)
+        # in db - float as decimal, decimal as string...
+        self.assertEqual(tender['bids'][0]["value"]["amount"], '401.0')
 
     def test_conflict_insdel121(self):
         self.set_status('active.tendering')
@@ -244,7 +245,8 @@ class TenderConflictsTest(BaseTenderWebTest):
         tender = self.db.get(self.tender_id)
         self.assertEqual(len(tender['bids']), 1)
         self.assertEqual(tender['bids'][0]["id"], bid_id)
-        self.assertEqual(tender['bids'][0]["value"]["amount"], 401)
+        # in db - float as decimal, decimal as string...
+        self.assertEqual(tender['bids'][0]["value"]["amount"], '401.0')
 
     def test_conflict_insdel112(self):
         self.set_status('active.tendering')
@@ -274,7 +276,8 @@ class TenderConflictsTest(BaseTenderWebTest):
         tender = self.db.get(self.tender_id)
         self.assertEqual(len(tender['bids']), 1)
         self.assertEqual(tender['bids'][0]["id"], bid_id)
-        self.assertEqual(tender['bids'][0]["value"]["amount"], 401)
+        # in db - float as decimal, decimal as string...
+        self.assertEqual(tender['bids'][0]["value"]["amount"], '401.0')
 
     def test_conflict_complex(self):
         self.couchdb_server.replicate(self.db.name, self.db2.name)
