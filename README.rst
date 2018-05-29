@@ -7,8 +7,6 @@ powering tenders database and reverse auction.
 'openprocurement.concord' is component responsible for 
 conflict resolution in tenders database.
 
-Documentation about this API is accessible at
-http://api-docs.openprocurement.org/
 
 Usage
 -----
