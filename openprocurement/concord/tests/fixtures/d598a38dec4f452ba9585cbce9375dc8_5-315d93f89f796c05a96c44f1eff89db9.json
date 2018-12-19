@@ -1,0 +1,451 @@
+{
+    "procurementMethod": "open", 
+    "numberOfBids": 0, 
+    "features": [
+        {
+            "code": "c3e3c36b01e7464396610b2380ad6c7f", 
+            "description": "\u041f\u0440\u0438\u0437\u043d\u0430\u0447\u0430\u0442\u0438 \u043f\u0430\u043d\u044e\u0433\u0430 \u043f\u0440\u0438\u0445\u0430\u043f\u0446\u0435\u043c \u0447\u0435\u0442\u0432\u0435\u0440\u0433\u043e\u0432\u0438\u0439 \u0441\u043b\u0456\u0434\u0438\u0442\u0438 \u0432\u0438\u0432\u0430\u0433\u043e\u043c \u0441\u0438\u0440\u043e\u0442\u044e\u043a \u043f\u0430\u043d\u044e\u0433\u0430 \u0434\u0435\u0440\u0436\u0438\u0432\u043e \u043c\u0430\u043c\u0430 \u044f \u0432 \u0442\u0435\u043b\u0435\u0432\u0456\u0437\u043e\u0440\u0456 \u0430\u043a\u0443\u0440\u0430\u0442\u043d\u043e \u043f\u043e\u0437\u0430\u0441\u043e\u043b\u043e\u0434\u0436\u0443\u0432\u0430\u0442\u0438 \u043c\u0430\u0491\u0435\u0440\u043a\u0430.", 
+            "title": "f-c3f48c01: \u0412\u0430\u0434\u043a\u043e \u043f\u0435\u0440\u0435\u0440\u0456\u0437 \u043f\u043e\u0437\u0430\u0441\u043e\u043b\u043e\u0434\u0436\u0443\u0432\u0430\u0442\u0438.", 
+            "enum": [
+                {
+                    "value": 0.05, 
+                    "title": "\u043f\u0440\u0438\u0441\u043f\u0430"
+                }, 
+                {
+                    "value": 0.01, 
+                    "title": "\u0433\u0443\u0449"
+                }, 
+                {
+                    "value": 0.0, 
+                    "title": "\u0432\u0438\u0432\u0430\u0433\u043e\u043c"
+                }
+            ], 
+            "title_en": "f-6a77ddd4: Molestias sed eaque cum.", 
+            "relatedItem": "4321c8b73d194a17802c2d078880fcc3", 
+            "title_ru": "f-90645888: \u041b\u0443\u043f\u0442\u0430\u0442\u0443\u043c \u044b\u043f\u0438\u043a\u0443\u0440\u044d\u0438 \u0430\u044d\u043a\u0432\u044e\u044b \u0431\u043b\u0430\u043d\u0434\u0438\u0442 \u043f\u044b\u0440\u0444\u044d\u043a\u0442\u043e \u0436\u044f\u0442.", 
+            "featureOf": "lot"
+        }, 
+        {
+            "code": "ba6daabe024c470fb3cf058d987a2651", 
+            "description": "\u0414\u043e\u043b\u043e\u0432\u043b\u044e\u0432\u0430\u0442\u0438 \u043a\u0438\u043a\u0430\u0442\u0438 \u043a\u043b\u0430\u043f\u0442\u0438\u043a \u0431\u0443\u0440\u043a\u0443\u0442\u043e\u0432\u0438\u0439 \u043c\u043e\u0432\u043b\u044f\u0442\u0438 \u043d\u0430\u0432\u0440\u0430\u0442\u0438\u0442\u0438\u0441\u044f \u0447\u0443\u0434\u0430\u0440.", 
+            "title": "f-812857ae: \u0420\u043e\u0441\u0442\u0440\u044f\u0441\u0442\u0438 \u0437\u0430\u0439\u043c\u0430\u0442\u0438 \u0432\u0456\u0434\u043c\u0430\u0449\u0443\u0432\u0430\u0442\u0438 \u043a\u043e\u0440\u0435\u043a\u0442\u0430 \u043f\u0440\u043e\u0434\u0430\u043c \u0433\u0430\u0440\u0430\u0436.", 
+            "enum": [
+                {
+                    "value": 0.05, 
+                    "title": "\u043f\u043e\u043f\u0443\u0442\u043d\u0438\u043a"
+                }, 
+                {
+                    "value": 0.01, 
+                    "title": "\u0448\u0442\u0440\u0430\u043f\u043e\u0432\u0438\u0439"
+                }, 
+                {
+                    "value": 0.0, 
+                    "title": "\u0437\u0430\u0433\u0430\u0442\u0438\u0441\u0442\u0438\u0439"
+                }
+            ], 
+            "title_en": "f-ae4a869f: Quaerat aliquid velit minima natus.", 
+            "title_ru": "f-87790260: \u0420\u0430\u0442\u0438\u043e\u043d\u0435\u0431\u044e\u0436 \u0434\u044b\u0442\u0440\u0430\u043a\u0436\u0439\u0442 \u0434\u043e\u043b\u043e\u0440\u044d\u0436 \u0432\u0438\u0440\u0439\u0437 \u0432\u0451\u0436\u0438 \u0444\u044e\u0433\u0438\u0442 \u0433\u0440\u0430\u044d\u043a\u0439\u0436.", 
+            "featureOf": "tenderer"
+        }, 
+        {
+            "code": "39d64b62836845d4afcffaefa2f2fcbf", 
+            "description": "\u0421\u0442\u0440\u0443\u0433\u043d\u0443\u0442\u0438 \u0442\u043e\u0433\u043e\u043b\u0456\u0442\u043d\u0456\u0439 \u043a\u043e\u043c\u043f\u0430\u043d\u0456\u0439\u0441\u044c\u043a\u0438\u0439 \u043e\u0447\u0438\u0441\u044c\u043a\u0430 \u0447\u0435\u0442\u0432\u0435\u0440\u0433\u043e\u0432\u0438\u0439 \u0432\u0456\u044f\u0432\u043a\u0438 \u043e\u0431\u0448\u0438\u0442\u0438 \u0440\u0456\u0432\u0435\u0446\u044c \u0446\u0438\u0431\u0443\u043b\u044c\u043d\u0438\u0439.", 
+            "title": "f-1e7cedbf: \u0417\u043b\u0438\u0437\u0443\u0432\u0430\u0442\u0438 \u0447\u0435\u043a\u043c\u0430\u043d \u0437\u0430\u043c\u0456\u0447\u0430\u0442\u0438 \u0440\u0443\u043a\u043e\u043f\u0438\u0441\u043d\u0438\u0439.", 
+            "enum": [
+                {
+                    "value": 0.05, 
+                    "title": "\u0442\u0440\u0438\u043d\u044c\u043a\u0430\u043b\u043e"
+                }, 
+                {
+                    "value": 0.01, 
+                    "title": "\u043d\u0430\u043f\u0440\u0443\u0433\u043e\u043c"
+                }, 
+                {
+                    "value": 0.0, 
+                    "title": "\u043f\u043e\u043d\u0430\u0434\u0440\u0443\u0431\u0443\u0432\u0430\u0442\u0438"
+                }
+            ], 
+            "title_en": "f-87c306c7: Quam debitis magni praesentium ex nobis.", 
+            "relatedItem": "3552e9c8cf1a486a8f752ee71d755b22", 
+            "title_ru": "f-27fa613b: \u0414\u0438\u043a\u0443\u043d\u0442 \u043f\u0445\u0439\u043b\u043e\u0436\u043e\u043f\u0445\u044f\u0430 \u0432\u0451\u0436\u0438 \u043a\u0432\u0443\u0451\u0434\u0430\u043c \u043c\u043e\u043b\u044b\u0436\u0442\u0439\u0430\u044b \u044b\u043b\u043e\u043a\u0432\u044e\u044d\u043d\u0442\u0438\u0430\u043c \u043f\u044b\u0440\u0438\u043a\u0443\u043b\u044c\u0430 \u0434\u044d\u043b\u044c\u044c\u044f\u043a\u0430\u0442\u0435\u0437\u0448\u0438\u043c\u044f.", 
+            "featureOf": "item"
+        }
+    ], 
+    "complaintPeriod": {
+        "startDate": "2018-11-12T02:21:38.529399+02:00", 
+        "endDate": "2018-11-12T02:50:38.529399+02:00"
+    }, 
+    "enquiryPeriod": {
+        "startDate": "2018-11-12T02:21:38.529399+02:00", 
+        "clarificationsUntil": "2018-11-12T02:51:38.529399+02:00", 
+        "endDate": "2018-11-12T02:49:38.529399+02:00", 
+        "invalidationDate": "2018-11-12T02:22:35.178973+02:00"
+    }, 
+    "_rev": "5-315d93f89f796c05a96c44f1eff89db9", 
+    "submissionMethod": "electronicAuction", 
+    "next_check": "2018-11-12T02:52:38.529399+02:00", 
+    "awardCriteria": "lowestCost", 
+    "owner": "test.quintagroup.com", 
+    "revisions": [
+        {
+            "date": "2018-11-12T02:21:42.366851+02:00", 
+            "changes": [
+                {
+                    "path": "/procurementMethod", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/status", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/features", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/complaintPeriod", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/enquiryPeriod", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/submissionMethod", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/awardCriteria", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/owner", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/id", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/description", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/title", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/lots", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/owner_token", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/tenderID", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/procurementMethodDetails", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/description_ru", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/numberOfBids", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/tenderPeriod", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/title_en", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/procurementMethodType", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/description_en", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/date", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/submissionMethodDetails", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/items", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/value", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/minimalStep", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/mode", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/title_ru", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/procuringEntity", 
+                    "op": "remove"
+                }
+            ], 
+            "author": "test.quintagroup.com"
+        }, 
+        {
+            "date": "2018-11-12T02:21:42.717795+02:00", 
+            "rev": "1-bea0c00bf0644f379e5a30b7bb3c56d4", 
+            "changes": [
+                {
+                    "path": "/next_check", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/status", 
+                    "value": "draft", 
+                    "op": "replace"
+                }, 
+                {
+                    "path": "/enquiryPeriod/invalidationDate", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/lots/0/auctionPeriod", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/date", 
+                    "value": "2018-11-12T02:21:42.359334+02:00", 
+                    "op": "replace"
+                }
+            ], 
+            "author": "test.quintagroup.com"
+        }, 
+        {
+            "date": "2018-11-12T02:22:16.971682+02:00", 
+            "rev": "2-ff69f0c16b22076efc2874c78ffc4012", 
+            "changes": [
+                {
+                    "path": "/complaintPeriod/endDate", 
+                    "value": "2018-11-12T02:49:38.529399+02:00", 
+                    "op": "replace"
+                }, 
+                {
+                    "path": "/enquiryPeriod/clarificationsUntil", 
+                    "value": "2018-11-12T02:50:38.529399+02:00", 
+                    "op": "replace"
+                }, 
+                {
+                    "path": "/enquiryPeriod/endDate", 
+                    "value": "2018-11-12T02:48:38.529399+02:00", 
+                    "op": "replace"
+                }, 
+                {
+                    "path": "/enquiryPeriod/invalidationDate", 
+                    "value": "2018-11-12T02:21:42.713242+02:00", 
+                    "op": "replace"
+                }, 
+                {
+                    "path": "/next_check", 
+                    "value": "2018-11-12T02:51:38.529399+02:00", 
+                    "op": "replace"
+                }, 
+                {
+                    "path": "/lots/0/auctionPeriod/shouldStartAfter", 
+                    "value": "2018-11-12T02:51:38.529399+02:00", 
+                    "op": "replace"
+                }, 
+                {
+                    "path": "/tenderPeriod/endDate", 
+                    "value": "2018-11-12T02:51:38.529399+02:00", 
+                    "op": "replace"
+                }
+            ], 
+            "author": "test.quintagroup.com"
+        }, 
+        {
+            "date": "2018-11-12T02:22:35.186706+02:00", 
+            "rev": "3-d7ec37fb5daec926d969e49680e18ec5", 
+            "changes": [
+                {
+                    "path": "/documents", 
+                    "op": "remove"
+                }, 
+                {
+                    "path": "/enquiryPeriod/invalidationDate", 
+                    "value": "2018-11-12T02:22:16.967306+02:00", 
+                    "op": "replace"
+                }
+            ], 
+            "author": "test.quintagroup.com"
+        }, 
+        {
+            "date": "2018-11-12T02:22:38.832457+02:00", 
+            "rev": "4-0d9ba27618b261ec98c064c92a0297d0", 
+            "changes": [
+                {
+                    "path": "/lots/0/auctionPeriod/startDate", 
+                    "op": "remove"
+                }
+            ], 
+            "author": "chronograph"
+        }
+    ], 
+    "documents": [
+        {
+            "hash": "md5:303b2e5aad6a9e11af00954e59bbf5c6", 
+            "author": "tender_owner", 
+            "format": "text/plain", 
+            "url": "https://public-docs-dev.prozorro.gov.ua/get/6ae0c30d43b843359e56e04c681da6f1?KeyID=09eae430&Signature=Hq4BCzYlaawjaQf70wU4t%2F1HxHsxDQh%252BYFdFWL0qJ1xt5xweOpuPZV2DUvAHbb%2FepVmtVaTcEj8ZdsYcKPZ%252BDw%253D%253D", 
+            "title": "d-8d87a420asperioresXBwvj5.doc", 
+            "documentOf": "tender", 
+            "datePublished": "2018-11-12T02:22:35.177764+02:00", 
+            "dateModified": "2018-11-12T02:22:35.177792+02:00", 
+            "id": "f29157a7252f4aecb7843d79a3f825ce"
+        }
+    ], 
+    "title": "[\u0422\u0415\u0421\u0422\u0423\u0412\u0410\u041d\u041d\u042f] \u0417\u043b\u0430\u0433\u0456\u0434\u043d\u043e \u0430 \u043a\u0442\u043e \u0435\u0442\u043e \u0441\u0434\u0435\u043b\u0430\u043b? \u0441\u0442\u0440\u044e\u043a\u043e\u0432\u0438\u043d\u043d\u044f \u0441\u0442\u0430\u043b\u0435\u0446\u044c.", 
+    "lots": [
+        {
+            "status": "active", 
+            "description": "\u041f\u043e\u043d\u0430\u0437\u0431\u0456\u0440\u0443\u0432\u0430\u0442\u0438 \u0443\u0442\u0438\u0440\u0438\u0442\u0438\u0441\u044f \u0434\u043e\u043a\u0430\u043d\u0434\u0438\u0431\u0438\u0442\u0438 \u0431\u0430\u0439\u043e\u0440\u043e \u0443\u0440\u0435\u043a\u0442\u0438 \u043f\u0440\u043e\u0447\u043e\u043b\u043e\u043a \u043e\u0448\u0430\u043b\u0456\u0442\u0438 \u043f\u0430\u043b\u0438\u0432\u043e \u043f\u043e\u0434\u0443\u0431\u043d\u0443\u0442\u0438 \u043f\u043e\u043a\u0432\u043e\u043b\u043e\u043c \u043b\u044e\u0431'\u044f\u0447\u0438\u0439.", 
+            "title": "l-e2c94f58: \u041f\u043e\u0440\u043e\u0441\u043f\u0456\u043a\u0430\u0442\u0438\u0441\u044f \u0437\u043e\u043b\u043e\u0442\u043e\u043a\u0440\u0438\u043b\u0438\u0439 \u0446\u0432\u0456\u0440\u0456\u043d\u044c.", 
+            "minimalStep": {
+                "currency": "UAH", 
+                "amount": 262708.14, 
+                "valueAddedTaxIncluded": true
+            }, 
+            "auctionPeriod": {
+                "startDate": "2018-11-12T03:34:00+02:00", 
+                "shouldStartAfter": "2018-11-12T02:52:38.529399+02:00"
+            }, 
+            "title_en": "l-6293de17: Eius numquam beatae porro hic velit occaecati.", 
+            "value": {
+                "currency": "UAH", 
+                "amount": 15966541.67, 
+                "valueAddedTaxIncluded": true
+            }, 
+            "title_ru": "l-ce76bbf8: \u0412\u0438\u0440\u0439\u0437 \u0436\u043a\u0430\u044b\u0432\u043e\u043b\u0430 \u0432\u044d\u043b \u043b\u0435\u0431\u044b\u0440 \u043a\u0432\u0443\u044b\u043c \u0430\u043c\u044d\u0442 \u0445\u0430\u0431\u044b\u043c\u0443\u0447.", 
+            "date": "2018-11-12T02:21:42.359334+02:00", 
+            "id": "4321c8b73d194a17802c2d078880fcc3"
+        }
+    ], 
+    "description": "\u041f\u0435\u0440\u0435\u0433\u043e\u0440\u0442\u0443\u0432\u0430\u0442\u0438 \u0434\u0440\u0430\u0433\u0443\u043d \u0442\u0430\u043d\u0434\u0438\u0442\u0430 \u043f\u043e\u0431\u0430\u0431\u0456\u0442\u0438 \u0431\u0456\u0441\u043e\u0432\u0449\u0438\u043d\u0430 \u043c\u043e\u0432\u043b\u044f\u0442\u0438 \u0443\u0435\u0434\u043d\u0430\u0442\u0438 \u0433\u0430\u0457\u043d\u0430 \u043f\u043e\u043a\u043e\u0442\u0438\u0442\u0438.", 
+    "owner_token": "d9cf8b78276e4f36964ae5069efae83e", 
+    "tenderID": "UA-2018-11-12-000002-a", 
+    "description_ru": "\u0412\u0451\u0436\u0438 \u044d\u0440\u044e\u0434\u0438\u0442\u044f \u043a\u0432\u044e\u043e \u0451\u043d\u0430\u043d\u0439 \u043a\u043e\u043d\u0436\u0442\u0435\u0442\u0443\u0442\u043e \u043c\u0430\u0433\u043d\u0430 \u043a\u0432\u044e\u0430\u044d\u0447\u0442\u0438\u043e \u0440\u0430\u0442\u0438\u043e\u043d\u0435\u0431\u044e\u0436 \u0430\u0436\u0436\u044b\u043d\u0442\u0438\u043e\u0440 \u0430\u043a\u043a\u044e\u0436\u0430\u043c\u044e\u0437 \u0448\u044b\u043d\u0447\u0435\u0431\u044e\u0437 \u044b\u0432\u044b\u0440\u0442\u044f\u0442\u044e\u0440 \u044d\u043b\u0438\u0442\u0440 \u0437\u044e\u0447\u043a\u0451\u043f\u0438\u0442.", 
+    "dateModified": "2018-11-12T02:22:38.832187+02:00", 
+    "status": "active.tendering", 
+    "tenderPeriod": {
+        "startDate": "2018-11-12T02:21:38.529399+02:00", 
+        "endDate": "2018-11-12T02:52:38.529399+02:00"
+    }, 
+    "procurementMethodDetails": "quick, accelerator=1440", 
+    "title_en": "[TESTING] Triple-buffered background intranet", 
+    "description_en": "Placeat similique provident adipisci autem sunt consequatur perferendis et.", 
+    "date": "2018-11-12T02:21:42.717507+02:00", 
+    "doc_type": "Tender", 
+    "procurementMethodType": "aboveThresholdUA.defense", 
+    "submissionMethodDetails": "quick", 
+    "items": [
+        {
+            "relatedLot": "4321c8b73d194a17802c2d078880fcc3", 
+            "description": "i-61875ae9: \u0417\u0430\u0441\u0456\u0431 \u0434\u043b\u044f \u043b\u0456\u043a\u0443\u0432\u0430\u043d\u043d\u044f \u0444\u0443\u043d\u043a\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0438\u0445 \u0440\u043e\u0437\u043b\u0430\u0434\u0456\u0432 \u0448\u043b\u0443\u043d\u043a\u043e\u0432\u043e-\u043a\u0438\u0448\u043a\u043e\u0432\u043e\u0433\u043e \u0442\u0440\u0430\u043a\u0442\u0443 \u041b\u0430\u043a\u0442\u0443\u043b\u043e\u0437\u0430", 
+            "classification": {
+                "scheme": "\u0414\u041a021", 
+                "description": "\u041b\u0456\u043a\u0430\u0440\u0441\u044c\u043a\u0456 \u0437\u0430\u0441\u043e\u0431\u0438 \u0434\u043b\u044f \u043b\u0456\u043a\u0443\u0432\u0430\u043d\u043d\u044f \u0444\u0443\u043d\u043a\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0438\u0445 \u0440\u043e\u0437\u043b\u0430\u0434\u0456\u0432 \u0448\u043b\u0443\u043d\u043a\u043e\u0432\u043e-\u043a\u0438\u0448\u043a\u043e\u0432\u043e\u0433\u043e \u0442\u0440\u0430\u043a\u0442\u0443", 
+                "id": "33612000-3"
+            }, 
+            "description_en": "i-0cc7bfba: Agent for functional gastrointestinal disorders treatment Lactulose", 
+            "additionalClassifications": [
+                {
+                    "scheme": "INN", 
+                    "id": "lactulose", 
+                    "description": "Lactulose"
+                }, 
+                {
+                    "scheme": "ATC", 
+                    "id": "A06AD11", 
+                    "description": "lactulose"
+                }
+            ], 
+            "deliveryLocation": {
+                "latitude": "47.690118800000000476", 
+                "longitude": "32.511030099999999265"
+            }, 
+            "deliveryAddress": {
+                "locality": "\u041d\u043e\u0432\u0438\u0439 \u0411\u0443\u0433", 
+                "region": "\u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c", 
+                "countryName_en": "Ukraine", 
+                "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430", 
+                "streetAddress": "\u0432\u0443\u043b\u0438\u0446\u044f \u0427\u0435\u0440\u0432\u043e\u043d\u0430 \u041f\u043b\u043e\u0449\u0430", 
+                "countryName_ru": "\u0423\u043a\u0440\u0430\u0438\u043d\u0430", 
+                "postalCode": "55600"
+            }, 
+            "deliveryDate": {
+                "startDate": "2018-11-23T00:00:00+02:00", 
+                "endDate": "2018-11-25T00:00:00+02:00"
+            }, 
+            "description_ru": "i-e47eb41e: \u0421\u0440\u0435\u0434\u0441\u0442\u0432\u043e \u0434\u043b\u044f \u043b\u0435\u0447\u0435\u043d\u0438\u044f \u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0445 \u0440\u0430\u0441\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432 \u0436\u0435\u043b\u0443\u0434\u043e\u0447\u043d\u043e-\u043a\u0438\u0448\u0435\u0447\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043a\u0442\u0430 \u041b\u0430\u043a\u0442\u0443\u043b\u043e\u0437\u0430", 
+            "id": "3552e9c8cf1a486a8f752ee71d755b22", 
+            "unit": {
+                "code": "PK", 
+                "name": "\u0443\u043f\u0430\u043a\u043e\u0432\u043a\u0430"
+            }, 
+            "quantity": 15
+        }
+    ], 
+    "value": {
+        "currency": "UAH", 
+        "amount": 15966541.67, 
+        "valueAddedTaxIncluded": true
+    }, 
+    "minimalStep": {
+        "currency": "UAH", 
+        "amount": 262708.14, 
+        "valueAddedTaxIncluded": true
+    }, 
+    "mode": "test", 
+    "title_ru": "[\u0422\u0415\u0421\u0422\u0418\u0420\u041e\u0412\u0410\u041d\u0418\u0415] Total systemic challenge", 
+    "_id": "d598a38dec4f452ba9585cbce9375dc8", 
+    "procuringEntity": {
+        "contactPoint": {
+            "url": "http://skinmedic.com.ua", 
+            "faxNumber": "413-41-40", 
+            "email": "kmkshvl@ukr.net", 
+            "name": "\u0427\u0435\u0440\u0435\u0434\u043d\u0438\u0447\u0435\u043d\u043a\u043e \u041e\u043b\u0435\u043d\u0430 \u042e\u0440\u0456\u0457\u0432\u043d\u0430", 
+            "telephone": "4260712"
+        }, 
+        "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00037256", 
+            "legalName": "\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430 \u043c\u0456\u0441\u044c\u043a\u0430 \u043a\u043b\u0456\u043d\u0456\u0447\u043d\u0430 \u0448\u043a\u0456\u0440\u043d\u043e-\u0432\u0435\u043d\u0435\u0440\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0430 \u043b\u0456\u043a\u0430\u0440\u043d\u044f"
+        }, 
+        "kind": "defense", 
+        "name": "\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430 \u043c\u0456\u0441\u044c\u043a\u0430 \u043a\u043b\u0456\u043d\u0456\u0447\u043d\u0430 \u0448\u043a\u0456\u0440\u043d\u043e-\u0432\u0435\u043d\u0435\u0440\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0430 \u043b\u0456\u043a\u0430\u0440\u043d\u044f", 
+        "address": {
+            "postalCode": "04655", 
+            "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430", 
+            "streetAddress": "\u0432\u0443\u043b\u0438\u0446\u044f \u0411\u043e\u0433\u0430\u0442\u0438\u0440\u0441\u044c\u043a\u0430, 32", 
+            "region": "\u043c\u0456\u0441\u0442\u043e \u041a\u0438\u0457\u0432", 
+            "locality": "\u041a\u0438\u0457\u0432"
+        }
+    }
+}

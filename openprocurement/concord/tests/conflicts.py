@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 import unittest
 import random
+import os.path
+import json
+import mock
 from openprocurement.tender.belowthreshold.tests.base import test_organization
 from openprocurement.concord.tests.base import BaseTenderWebTest
 from openprocurement.concord.daemon import conflicts_resolve as resolve
@@ -16,6 +19,28 @@ def conflicts_resolve(db):
 
 
 class TenderConflictsTest(BaseTenderWebTest):
+
+    def test_CS_1379(self):
+
+        class DB:
+            @staticmethod
+            def get(uid, rev):
+                file_name = "fixtures/{}_{}.json".format(uid, rev)
+                with open(os.path.join(os.path.dirname(__file__), file_name)) as f:
+                    data = json.load(f)
+                return data
+
+        conflict_fixture = "fixtures/conflict_d598a38dec4f452ba9585cbce9375dc8.json"
+        with open(os.path.join(os.path.dirname(__file__), conflict_fixture)) as f:
+            conflict = json.load(f)
+
+        with mock.patch("openprocurement.concord.daemon.LOGGER") as logger_mock:
+            resolve(DB, conflict, None)
+            logger_mock.error.assert_called_with(
+                "Can't apply patch",
+                extra={'rev': u'35-ef3d7b30e13463290550940728a33265',
+                       'tenderid': u'd598a38dec4f452ba9585cbce9375dc8',
+                       'MESSAGE_ID': 'conflict_error_patch'})
 
     def patch_tender(self, i, j, app):
         for i in range(i, j):
