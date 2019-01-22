@@ -58,6 +58,52 @@ class TenderConflictsTest(BaseTenderWebTest):
         self.couchdb_server.replicate(self.db2.name, self.db.name)
         self.assertEqual(len(self.db.view('conflicts/all')), 0)
 
+    def test_conflict_double_document_upload(self):
+        data = self.initial_data.copy()
+        data['status'] = 'active.enquiries'
+        response = self.app.post_json('/tenders', {'data': data})
+        tender = response.json['data']
+        self.assertEqual('active.enquiries', tender['status'])
+        tender_id = tender['id']
+        #Replicate tender to DBs
+        self.couchdb_server.replicate(self.db.name, self.db2.name)
+        self.couchdb_server.replicate(self.db2.name, self.db.name)
+
+        # Insert doc in 1st database
+        response = self.app.post('/tenders/{}/documents'.format(tender_id),
+                                 upload_files=[('file', 'Notice.pdf', 'content')])
+        self.assertEqual(response.status, '201 Created')
+        response = self.app.get('/tenders/{}/documents'.format(tender_id))
+        self.assertEqual(response.status, '200 OK')
+        docs = response.json['data']
+        self.assertEqual('Notice.pdf', docs[0]['title'])
+
+        #Insert doc in 2nd database
+        response = self.app2.post('/tenders/{}/documents'.format(tender_id),
+                                 upload_files=[('file', 'OtherNotice.pdf', 'other_content')])
+        self.assertEqual(response.status, '201 Created')
+        response = self.app2.get('/tenders/{}/documents'.format(tender_id))
+        self.assertEqual(response.status, '200 OK')
+        docs = response.json['data']
+        self.assertEqual('OtherNotice.pdf', docs[0]['title'])
+
+        #Replicate DBs. Here conflict is created
+        self.couchdb_server.replicate(self.db.name, self.db2.name)
+        self.couchdb_server.replicate(self.db2.name, self.db.name)
+
+        conflicts = self.db.view('conflicts/all')
+        self.assertGreater(len(conflicts), 0)
+        conflicts_resolve(self.db)
+        self.assertEqual(len(self.db.view('conflicts/all')), 0)
+        self.couchdb_server.replicate(self.db.name, self.db2.name)
+        self.couchdb_server.replicate(self.db2.name, self.db.name)
+        self.assertEqual(len(self.db.view('conflicts/all')), 0)
+
+        response = self.app.get('/tenders/{}/documents'.format(tender_id))
+        self.assertEqual(response.status, '200 OK')
+        docs = response.json['data']
+        self.assertEqual(2, len(docs))
+
     def test_conflict_tenderID(self):
         self.db2.save({'_id': 'tenderID'})
         self.couchdb_server.replicate(self.db.name, self.db2.name)

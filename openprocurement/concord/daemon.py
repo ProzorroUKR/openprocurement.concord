@@ -6,7 +6,11 @@ import os, logging, json
 from couchdb import Server, Session, ServerError, ResourceConflict
 from datetime import timedelta, datetime
 from jsonpointer import JsonPointerException
-from jsonpatch import JsonPatchConflict, make_patch, apply_patch as _apply_patch
+from jsonpatch import JsonPatchConflict, make_patch, JsonPatch, AddOperation as _AddOperation
+try:
+    from collections.abc import MutableMapping, MutableSequence
+except ImportError:
+    from collections import MutableMapping, MutableSequence
 from pytz import timezone
 #from gevent import spawn, wait
 from gevent import sleep
@@ -39,6 +43,57 @@ def update_journal_handler_params(params):
             for x, j in params.items():
                 i._extra[x.upper()] = j
 
+
+class AddOperation(_AddOperation):
+    """Adds an object property or an array element."""
+
+    def apply(self, obj):
+        try:
+            value = self.operation["value"]
+        except KeyError as ex:
+            raise InvalidJsonPatch(
+                "The operation does not contain a 'value' member")
+
+        subobj, part = self.pointer.to_last(obj)
+
+        if isinstance(subobj, MutableSequence):
+            if part == '-':
+                subobj.append(value)  # pylint: disable=E1103
+
+            elif part > len(subobj) or part < 0:
+                raise JsonPatchConflict("can't insert outside of list")
+
+            else:
+                subobj.insert(part, value)  # pylint: disable=E1103
+
+        elif isinstance(subobj, MutableMapping):
+            if part is None:
+                obj = value  # we're replacing the root
+            else:
+                if part in subobj:
+                    #this is the case when element was added in 2 versions of the document separetely
+                    #see https://jira.prozorro.org/browse/CS-111
+                    if isinstance(subobj[part], MutableSequence) and isinstance(value, MutableSequence):
+                        #merge two arrays together
+                        subobj[part] += value
+                    else:
+                        subobj[part] = value
+                else:
+                    subobj[part] = value
+
+        else:
+            raise TypeError("invalid document type {0}".format(type(subobj)))
+
+        return obj
+
+def _apply_patch(doc, patch, in_place=False):
+    if isinstance(patch, basestring):
+        patch = JsonPatch.from_string(patch)
+    else:
+        patch = JsonPatch(patch)
+    # redefine Add operation to fix issue #CS-111
+    patch.operations['add'] = AddOperation
+    return patch.apply(doc, in_place)
 
 def conflicts_resolve(db, c, dump_dir=None):
     """ Conflict resolution algorithm """
