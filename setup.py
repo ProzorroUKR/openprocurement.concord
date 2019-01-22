@@ -24,7 +24,7 @@ entry_points = """\
 """
 
 setup(name='openprocurement.concord',
-      version='0.5',
+      version='0.6dp',
       description="Conflict resolution daemon",
       long_description=README,
       classifiers=[
