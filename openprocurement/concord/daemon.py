@@ -248,4 +248,8 @@ def main(couchdb_url=None, couchdb_db='openprocurement', seq_file=None, dump_dir
 
 
 if __name__ == "__main__":
-    main()
+    couchdb_url = os.environ.get('CONCORD_COUCHDB_URL', None)
+    couchdb_db = os.environ.get('CONCORD_DB', 'openprocurement')
+    seq_file = os.environ.get('CONCORD_SEQ_FILE', None)
+    dump_dir = os.environ.get('CONCORD_DUMP_DIR', None)
+    main(couchdb_url, couchdb_db, seq_file, dump_dir)
