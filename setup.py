@@ -22,7 +22,7 @@ test_requires = requires + [
 
 entry_points = {
     'console_scripts': [
-        'concord = openprocurement.concord.daemon'
+        'concord = openprocurement.concord.daemon:main'
     ]
 }
 

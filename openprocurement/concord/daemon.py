@@ -26,6 +26,11 @@ LOGGER = logging.getLogger(__name__)
 IGNORE = ['_attachments', '_revisions', 'revisions', 'dateModified', '_id', '_rev', 'doc_type']
 TZ = timezone(os.environ['TZ'] if 'TZ' in os.environ else 'Europe/Kiev')
 
+default_couchdb_url = os.environ.get('CONCORD_COUCHDB_URL', None)
+default_couchdb_db = os.environ.get('CONCORD_DB', 'openprocurement')
+default_seq_file = os.environ.get('CONCORD_SEQ_FILE', None)
+default_dump_dir = os.environ.get('CONCORD_DUMP_DIR', None)
+
 
 def get_now():
     return datetime.now(TZ)
@@ -202,7 +207,8 @@ def conflicts_resolve(db, c, dump_dir=None):
         LOGGER.info("Deleting conflicts", extra={'tenderid': tid, 'rev': trev, 'MESSAGE_ID': 'conflict_deleting'})
 
 
-def main(couchdb_url=None, couchdb_db='openprocurement', seq_file=None, dump_dir=None):
+def main(couchdb_url=default_couchdb_url, couchdb_db=default_couchdb_db,
+         seq_file=default_seq_file, dump_dir=default_dump_dir):
     if JournalHandler:
         params = {
             'TAGS': 'python,concord',
@@ -248,8 +254,4 @@ def main(couchdb_url=None, couchdb_db='openprocurement', seq_file=None, dump_dir
 
 
 if __name__ == "__main__":
-    couchdb_url = os.environ.get('CONCORD_COUCHDB_URL', None)
-    couchdb_db = os.environ.get('CONCORD_DB', 'openprocurement')
-    seq_file = os.environ.get('CONCORD_SEQ_FILE', None)
-    dump_dir = os.environ.get('CONCORD_DUMP_DIR', None)
-    main(couchdb_url, couchdb_db, seq_file, dump_dir)
+    main()
