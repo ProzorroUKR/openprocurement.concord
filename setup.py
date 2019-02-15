@@ -20,8 +20,11 @@ test_requires = requires + [
     'openprocurement.tender.belowthreshold',
 ]
 
-entry_points = """\
-"""
+entry_points = {
+    'console_scripts': [
+        'concord = openprocurement.concord.daemon:main'
+    ]
+}
 
 setup(name='openprocurement.concord',
       version='0.6dp',
