@@ -1,9 +1,5 @@
 language: python
 sudo: required
-before_script:
-  - sudo add-apt-repository ppa:chris-lea/libsodium -y
-  - sudo apt-get -qq update
-  - sudo apt-get install libsodium13 -y
 python:
   - "2.7"
 services:
@@ -13,6 +9,10 @@ env:
 cache:
   directories:
     - eggs
+before_install:
+  - sudo add-apt-repository ppa:chris-lea/libsodium -y
+  - sudo apt-get -qq update
+  - sudo apt-get install libsodium13 -y
 install:
   - git clone https://github.com/ProzorroUKR/openprocurement.api.git src/openprocurement.api
   - pip install -r src/openprocurement.api/requirements.txt
