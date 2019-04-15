@@ -8,6 +8,7 @@ test:
   tags:
     - kube
   script:
+    - apt-get update -y && apt-get install libsodium-dev -y
     - git clone https://github.com/ProzorroUKR/openprocurement.api.git src/openprocurement.api
     - pip install -r src/openprocurement.api/requirements.txt
     - pip install -e src/openprocurement.api[test]
