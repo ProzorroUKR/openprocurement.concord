@@ -13,5 +13,6 @@ test:
     - pip install -r src/openprocurement.api/requirements.txt
     - pip install -e src/openprocurement.api[test]
     - pip install -e .[test]
+    - sleep infinity
     - py.test --cov openprocurement.concord openprocurement/ -v
   coverage: '/TOTAL.+ ([0-9]{1,3}%)/'
