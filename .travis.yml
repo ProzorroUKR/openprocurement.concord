@@ -19,6 +19,6 @@ install:
   - pip install -e src/openprocurement.api[test]
   - pip install -e .[test]
 script:
-  - CONCORD_COUCHDB_URL=http://op:op@localhost:5984/ nosetests
+  - nosetests
 after_success:
   - coveralls
