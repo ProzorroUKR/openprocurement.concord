@@ -13,12 +13,12 @@ env:
 cache:
   directories:
     - eggs
-before_install:
-  - pip install setuptools==7.0
-  - python2 bootstrap.py
 install:
-  - bin/buildout -N
+  - git clone https://github.com/ProzorroUKR/openprocurement.api.git src/openprocurement.api
+  - pip install -r src/openprocurement.api/requirements.txt
+  - pip install -e src/openprocurement.api[test]
+  - pip install -e .[test]
 script:
-  - bin/nosetests
+  - nosetests
 after_success:
-  - bin/coveralls
+  - coveralls
