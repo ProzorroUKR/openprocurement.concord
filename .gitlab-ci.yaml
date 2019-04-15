@@ -1,0 +1,16 @@
+stages:
+  - test
+
+test:
+  image: python:2.7-jessie
+  services:
+    - couchdb:1.6
+  tags:
+    - kube
+  script:
+    - git clone https://github.com/ProzorroUKR/openprocurement.api.git src/openprocurement.api
+    - pip install -r src/openprocurement.api/requirements.txt
+    - pip install -e src/openprocurement.api[test]
+    - pip install -e .[test]
+    - py.test --cov openprocurement.concord openprocurement/ -v
+  coverage: '/TOTAL.+ ([0-9]{1,3}%)/'
