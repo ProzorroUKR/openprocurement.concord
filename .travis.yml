@@ -19,6 +19,7 @@ install:
   - pip install -e src/openprocurement.api[test]
   - pip install -e .[test]
 script:
+  - curl http://127.0.0.1:5984/
   - py.test --cov openprocurement.concord openprocurement/ -v
 after_success:
   - coveralls
