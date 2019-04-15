@@ -19,6 +19,6 @@ install:
   - pip install -e src/openprocurement.api[test]
   - pip install -e .[test]
 script:
-  - nosetests
+  - py.test --cov openprocurement.concord openprocurement/ -v
 after_success:
   - coveralls

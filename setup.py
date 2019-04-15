@@ -17,7 +17,6 @@ test_requires = requires + [
     'webtest',
     'python-coveralls',
     'openprocurement.api',
-    'nose',
 ]
 
 entry_points = {
