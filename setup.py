@@ -17,7 +17,6 @@ test_requires = requires + [
     'webtest',
     'python-coveralls',
     'openprocurement.api',
-    'openprocurement.tender.belowthreshold',
 ]
 
 entry_points = {
@@ -27,7 +26,7 @@ entry_points = {
 }
 
 setup(name='openprocurement.concord',
-      version='0.6dp',
+      version='0.7dp',
       description="Conflict resolution daemon",
       long_description=README,
       classifiers=[
